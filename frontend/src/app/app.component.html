@@ -1,0 +1,7 @@
+<h1 *ngIf="response$ | async as response; else loading">
+  Did you know that <span class="fact">{{ response.fact }}</span>
+</h1>
+
+<ng-template #loading>
+  <img src="/assets/loading.gif" />
+</ng-template>
